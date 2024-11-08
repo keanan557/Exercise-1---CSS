@@ -1,0 +1,79 @@
+/* universal styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+/* style h1 */
+h1{
+    text-align: center;
+}
+
+/* style product cards */
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* border: 1px solid red; */
+    gap: 1rem;
+    padding: 10px;
+    
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    Box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 15px;
+    /* border: 1px solid red; */
+    margin: auto;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.product-card:hover{
+    transform: scale(1.1);
+}
+
+.product-image{
+    width: 250px;
+    height: 200px;
+}
+
+.product-card button{
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.product-card button:hover{
+    background-color: #357c38;
+}
+
+/* responsive css */
+@media (max-width: 768px){
+    main{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* border: 1px solid red; */
+    }
+}
+
+@media (max-width: 480px){
+    main{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* border: 1px solid red; */
+    }
+}
+
+
+
